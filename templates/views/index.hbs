@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="icon" href="/web-server/stealyourface.png">
+
+    <title>weather</title>
+
+</head>
+
+<body>
+    <div id="main-content">
+        {{>header}}
+        <form action="">
+            <input type="text" placeholder="Fucking Anywhere">
+            <button>Search</button>
+        </form>
+        {{!-- grid format to display icon inline --}}
+        <div class="weather">
+            <div>
+                <h2 id="title"></h2>
+                <p id="msg1"></p>
+                <p id="msg2"></p>
+            </div>
+            <img src="" alt="" id="icon">
+        </div>
+    </div>
+
+    {{>footer}}
+    <script src="/js/app.js"></script>
+</body>
+
+</html>
