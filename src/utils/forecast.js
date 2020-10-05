@@ -16,6 +16,8 @@ const forescat = (lat, long, callback) => {
         feelsLike: body.current.feelslike,
         description: body.current.weather_descriptions[0],
         icon: body.current.weather_icons[0],
+        precip: body.current.precip,
+        humidity: body.current.humidity,
       });
     }
   });

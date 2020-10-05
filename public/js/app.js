@@ -19,7 +19,7 @@ weatherForm.addEventListener("submit", (e) => {
         return (message1.textContent = "Please, enter a real address");
       const operator = data.temp === data.feelsLike ? "and" : "but";
       head.textContent = `It's fucking ${data.description.toLowerCase()} right now`;
-      message1.textContent = `The temperature is ${data.temp} degrees Fahrenheit, ${operator} it feels like ${data.feelsLike}`;
+      message1.textContent = `The temperature is ${data.temp} degrees Fahrenheit, ${operator} it feels like ${data.feelsLike}. Chance of precipitation is ${data.precip}%. Current humidity level is ${data.humidity}%.`;
       message2.textContent = data.location;
       icon.src = data.icon;
       console.log(data.icon);
