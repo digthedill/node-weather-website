@@ -13,7 +13,7 @@ weatherForm.addEventListener("submit", (e) => {
   message2.textContent = "";
   icon.src = "";
 
-  fetch(`http://localhost:3000/weather?address=${location}`).then((res) => {
+  fetch(`/weather?address=${location}`).then((res) => {
     res.json().then((data) => {
       if (data.error)
         return (message1.textContent = "Please, enter a real address");
